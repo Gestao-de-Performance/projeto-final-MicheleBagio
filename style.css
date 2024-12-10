@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     flex-wrap: wrap;
+
+}
+body{
+    background-color: #f1f8f1;
 }
 :root{
     --verde100 : #024D19;
@@ -10,17 +14,20 @@
     --verde300 : #00bf63;
 
 }
+
+/*inicio menu navegação*/
 #imagemInicial{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size:cover;
     opacity: 85%;
+    display: flex;
     position: relative;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    
 
 }
-
+.menuNavegacao a {
+    color: var(--verde200);
+    font-size: 1rem;
+}
 .menuNavegacao{
     list-style-type: none;
     display: flex;
@@ -30,35 +37,90 @@
     justify-content: space-around;
     align-items: center;
     background-color: #fdfbfd;
-    padding: 8px;
-    font-size: 1rem;
-}
+    padding: 6px;
 
-.descricaoInicial{
+}
+.descricaofoto{
     position: absolute;
-    top: 30%;
-    left: 10%;
+    align-content: flex-start;
+    padding: 8rem 1rem;
+}
+.descricaoInicial{
     color: white;
     font-size: 5rem;
 }
 .descricaoInicial2{
-    position: absolute;
-    top: 45%;
-    left:10%;
     color:white;
     font-size: 3rem;
 }
 /*fim do menu navegação*/
+
+/*botao flutuante*/
+.watts{
+    position: fixed;
+    top: 350px;
+    left: 1250px;
+    opacity: 80%;
+}
+/*reservas*/
+#reservar{
+    background: var(--verde100);
+    color: #ffffff;
+    width: 60rem;
+    height: 10rem;
+    border-radius: 8px;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: space-around ;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#reservar h3{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+#reservar p{
+    font-size: 1em;
+}
+#reservar div{
+    width: 45%;
+}
+#reservar input[type="datetime-local"]{
+    width: 95%;
+    border-radius: 8px;
+    border: none;
+    font-size: 2em;
+    text-align: center;
+}
+#reservar input[type="submit"]{
+   background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid  whitesmoke;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#reservar input[type="submit"]:hover { 
+    background-color: #15663d; 
+    color: #ffffff; 
+}
+
+/*fim reserva*/
+/*texto de apresentação*/
 #chale1{
     font-size: 4rem;
     color: var(--verde100);
+    justify-content: space-between;
     padding: 1rem, 4rem;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 .textoDescricao{
     padding: 1rem;
-    width: 1300px;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -74,13 +136,95 @@
     font-size: 2rem;
     margin-left: 3.3rem;
     margin-right: 5rem;
-    max-width: 1800px;
+    justify-content: space-between;
     margin-bottom: 1rem;
     text-align: justify;
 }
+/*fim texto apresentação*/
+/*fotos suites*/
+.textosuites{
+    font-size: 2rem;
+    color: var(--verde100);
+}
+.textosuites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3.3rem;
+    margin-right: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#containerfotoschales{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.3rem;
+    margin-right: 5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.containerfotos{
+    padding: 1rem;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+}
+.containerfotos a{
+    color: #024D19;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.containerfotos a:hover{
+    color:#00bf63;
+}
+.containerfotos p{
+    font-size: 1rem;
+    color: #024D19;
+}
+.imagemsuite{
+    width: 350px;
+    height:350px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+.texto3{
+    color: var(--verde100);
+}
+/*fim das fotos suites*/
+
+/*fotos restaurante*/
+.fotorestaurante{
+    width: 350px;
+    height: 300px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerfotorestaurante{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.3rem;
+    margin-right: 5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.descricaorestaurante {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-left: 3.3rem;
+    margin-right: 5rem;
+    color: #024D19;
+    text-align: center;
+}
+/*fim das fotos restaurante*/
 
 #containerAtributos{
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-right: 3rem;
     max-width: 2000px;
     margin-bottom: 1rem;
@@ -103,4 +247,128 @@
 .texto3{
     color: var(--verde100);
 }
+/*inicio formulario*/  
+/*endereço*/ 
+.container2{
+    width: 60rem;
+    height: 30rem;
+    border-radius: 8px;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: space-around ;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.containermapa{
+    width: 45%;
+    height: 85%;
+    border-radius: 10px;
+}
+.containermapa{
+    border: 2px solid var(--verde300);
+    align-items: center;
+}
+.mapa{
+    border-radius: 10px;
    
+}
+.endereco h3{
+    font-size: 2rem ;
+    color: var(--verde100);
+}
+.endereco h4{
+    color: var(--verde100);
+}
+.endereco p{
+    font-family: 1.5rem;
+    color: #03220c;
+}
+.endereco{
+    padding: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*fim endereço*/
+.container4{
+    border: 2px solid var(--verde300);
+    display: flex;
+    justify-content: center ;
+    justify-items: center;
+    align-items: center;
+    width: 45%; 
+    height: 85%;
+    border-radius: 8px; 
+    flex-wrap: wrap;
+}
+
+.container4 h2 { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 1.5em; 
+    color: #03220c
+    ;
+}
+.container4 form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 6px; /* Espaçamento entre os campos do formulário */ 
+    width: 90%; /* Ajusta a largura do formulário dentro do contêiner */ 
+    margin-left: auto; /* Centraliza o formulário horizontalmente */ 
+    margin-right: auto; /* Centraliza o formulário horizontalmente */
+}
+.container4 label { 
+    font-weight: bold; 
+} 
+.container4 input, textarea { 
+    padding: 5px;
+    color: #03220c; 
+    border: 1px solid #cccccc; 
+    border-radius: 4px; 
+    font-size: 10px; 
+    width: 100%; 
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */ 
+    
+} 
+.container4 button { 
+    padding: 10px; 
+    background-color: var(--verde100); 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+} 
+.container4 button:hover { 
+    background-color: #00bf63;
+}
+/*rodape*/
+.rodape{
+    background-color: #adf1b3;
+    display: flex;
+    height:100px;
+    justify-items: center;
+    justify-content: center ;
+    gap: 8rem;
+    padding: 1rem;
+    color: var(--verde100);
+    flex-wrap: wrap;
+}
+.imgrodape .redessocias{
+    display: grid;
+    flex-direction: column;
+}
+.contatos{
+    display: grid;
+
+}
+.contatos a{
+    text-decoration: none;
+    color: var(--verde100);
+}
+.contatos a:hover{
+    color:#00bf63;
+}
