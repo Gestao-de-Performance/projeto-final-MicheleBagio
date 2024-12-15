@@ -17,12 +17,10 @@ body{
 
 /*inicio menu navegação*/
 #imagemInicial{
-    background-size:cover;
+    background-size:100%;
     opacity: 85%;
     display: flex;
     position: relative;
-    
-
 }
 .menuNavegacao a {
     color: var(--verde200);
@@ -43,7 +41,7 @@ body{
 .descricaofoto{
     position: absolute;
     align-content: flex-start;
-    padding: 8rem 1rem;
+    padding: 12% 6%;
 }
 .descricaoInicial{
     color: white;
@@ -58,8 +56,8 @@ body{
 /*botao flutuante*/
 .watts{
     position: fixed;
-    top: 350px;
-    left: 1250px;
+    top: 50dvw;
+    left: 93dvw;
     opacity: 80%;
 }
 /*reservas*/
@@ -120,8 +118,7 @@ body{
 }
 .textoDescricao{
     padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 .texto2{
@@ -142,6 +139,9 @@ body{
 }
 /*fim texto apresentação*/
 /*fotos suites*/
+.containertodoschales{
+    margin: 0 auto 0;
+}
 .textosuites{
     font-size: 2rem;
     color: var(--verde100);
@@ -206,10 +206,10 @@ body{
 .containerfotorestaurante{
     display: flex;
     justify-content: space-between;
-    margin-left: 3.3rem;
-    margin-right: 5rem;
     flex-wrap: wrap;
     padding: 2rem;
+    margin-left: 3.3rem;
+    margin-right: 5rem;
 }
 .descricaorestaurante {
     display: flex;
@@ -220,6 +220,7 @@ body{
     margin-right: 5rem;
     color: #024D19;
     text-align: center;
+    flex-direction: column;
 }
 /*fim das fotos restaurante*/
 
@@ -247,7 +248,7 @@ body{
 .texto3{
     color: var(--verde100);
 }
-/*inicio formulario*/  
+ 
 /*endereço*/ 
 .container2{
     width: 60rem;
@@ -293,16 +294,15 @@ body{
     flex-wrap: wrap;
 }
 /*fim endereço*/
+/*formulario*/
 .container4{
     border: 2px solid var(--verde300);
     display: flex;
     justify-content: center ;
-    justify-items: center;
     align-items: center;
     width: 45%; 
     height: 85%;
     border-radius: 8px; 
-    flex-wrap: wrap;
 }
 
 .container4 h2 { 
@@ -345,6 +345,7 @@ body{
 .container4 button:hover { 
     background-color: #00bf63;
 }
+/*fim formulario*/
 /*rodape*/
 .rodape{
     background-color: #adf1b3;
@@ -371,4 +372,484 @@ body{
 }
 .contatos a:hover{
     color:#00bf63;
+}
+
+@media screen and (min-width:1380px) and (max-width: 1920px){
+.img1{
+    width: 1850px;
+}
+.imgchale2{
+    width: 1850px;
+}
+.watts{
+    left: 90vw;
+}
+#reservar {
+    background: var(--verde100);
+    color: #ffffff;
+    width: 80%;
+    height: 15rem;
+    border-radius: 8px;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#reservar h3{
+    font-size: 4em;
+    text-transform: uppercase;
+}
+#reservar p{
+    font-size: 2em;
+}
+#reservar span{
+    font-size: 2em;
+}
+#reservar input[type="submit"]{
+    font-size: 2em;
+}
+.containerfotos p{
+    font-size: 2em;
+}
+.containerfotos a {
+    font-weight: bold;
+    font-size: 2em;
+}
+.descricaoInicial{
+    font-size: 5rem;}    
+.containertodoschales{
+    max-width: 75vw;
+    margin: 0 auto 0;
+}
+.fotorestaurante{
+    max-width: 70vw;
+    margin: 0 auto 0;
+}
+.descricaorestaurante h2{
+    font-size: 3em;
+}
+.descricaorestaurante p{
+    font-size: 2em;
+}
+.container2 {
+    width: 80rem;
+    height: 40em;
+}
+.container4 input, textarea {
+    font-size: 24px;
+}
+.endereco p{
+    font-size: 2em;
+}
+.endereco h3, h4{
+    font-size: 2em;
+}
+.rodape{
+    height: 160px;
+    gap: 12em;
+}
+.rodape span{
+    font-size: 1.5em;
+}
+.imgrodape{
+    width:200px;
+    height: 80px;
+}
+.xalerodape{
+    width: 200px;
+    height: 80px;
+}
+.instagram,.facebook, .wattsapp{
+    width: 50px;
+    height: 50px;
+}
+}
+@media screen and (min-width:900px) and (max-width: 1249px){
+.descricaoInicial{
+    font-size: 4em;
+}
+.descricaoInicial2{
+    font-size: 2.5em;
+}
+.fotoculta{
+    display: none;
+}  
+.watts{
+    left: 90vw;
+}
+#reservar {
+    width: 50rem;
+}   
+}
+@media screen and (min-width:765px) and (max-width: 768px){
+.descricaoInicial{
+    font-size: 140%;
+} 
+.imgnav{
+    display: none;
+}  
+.menuNavegacao{
+    max-width: 280px;
+    background-color: #f1f8f1;
+}
+.img1{
+    width: 38vw;
+} 
+.descricaoInicial2{
+    display: none;
+}
+.descricaofoto{
+    padding: 5% 3%;
+
+}
+.watts{
+    top: 20vw;
+    left: 32vw;
+}
+.imgwatts{
+    width: 50px;
+    height: 50px;
+}
+#reservar {
+    width: 13em;
+    height: 9em;
+    display: grid;
+    flex-direction: column;
+    margin-left: 6%;
+} 
+#reservar h3{
+    font-size: 70%;
+    text-align: center;
+}
+#reservar p{
+    font-size: 70%;
+    width: 80%;
+    text-align: center;
+    margin-left: 20px;
+}
+#reservar div{
+    width: 100%;
+}
+#reservar input[type="datetime-local"]{
+    font-size: 80%;
+}
+#reservar input[type="submit"]{
+    font-size: 70%;
+} 
+#reservar span{
+    font-size: 65%;
+
+}
+#reservar form{
+    margin-left: 8px;
+}
+#chale1{
+    font-size: 1em;
+    margin-left: 30px;
+    max-width: 200px;
+}
+.texto4{
+    max-width: 250px;
+    font-size: 80%;
+    margin-left: 0;
+}
+.imgchale2{
+    width: 38vw;
+}
+.textosuites{
+    font-size: 0.70em;
+    margin-left: 2em;
+    justify-content: flex-start;
+}
+.containertodoschales{
+    display: table-caption;
+}
+#containerfotoschales{
+    margin-left: 0em;
+    margin-right: 0em;
+    padding: 0.3em;
+}
+.imagemsuite{
+    width: 200px;
+    height: 200px;
+    margin-right: 70px;
+}
+.containerfotos{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.containerfotos p{
+    font-size: 0.85em;
+    margin-right: 70px;
+}
+.containerfotos a{
+    font-size: 1.3em;
+    margin-right: 65px;
+}
+/*restaurante*/
+.descricaorestaurante h2 {
+    font-size: 75%;
+    max-width: 200px;
+    margin-right: 100px;
+}
+.descricaorestaurante p{
+    font-size: 60%;
+    margin-right: 460px;
+    margin-left: 2px;
+    text-align: justify;
+}
+.containerfotorestaurante{
+    padding: 1em 1em;
+    margin-left: 0.9em;
+    display: table-caption;
+}
+.fotorestaurante{
+    width: 230px;
+    height: 200px;
+}
+/*contato*/
+.container2{
+    width: 30em;
+    height: 30em;
+    display: contents;
+}
+.containermapa {
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+.containermapa {
+    width: 30%;
+    height: 40%;
+}
+.container4 {
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+.container4 {
+    width: 30%;
+    height: 40%;
+}
+.endereco h3, h4{
+    font-size: 0.75em;
+}
+.endereco p{
+    font-size: 0.60em;
+}
+.container4 label{
+    font-size: 0.60em;
+}
+.mapa{
+    height: 130px;
+}
+.container4 h2{
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+.container4 input, textarea{
+    font-size: 8px;
+}
+.container4 button{
+    font-size: 10px;
+}
+.container4 form{
+    gap: 3px;
+}
+.rodape{
+    height: 160px;
+    max-width: 295px;
+    display: list-item;
+}
+.xalerodape{
+    width: 80px;
+    height: 40px;
+}
+.redessociais{
+    justify-items: center;
+}
+.contatos{
+    justify-items: center;
+}
+.redessociais span{
+    font-size: 0.8em;
+}
+.facebook, .instagram, .wattsapp{
+    width: 20px;
+    height: 20px;
+}
+.contatos span{
+    font-size: 0.6em;
+}
+}
+@media screen and (max-width: 360px){
+.menuNavegacao{
+    background-color: #f1f8f1;
+}
+.img1{
+    width: 390px;
+}
+.imgnav{
+    display: none;
+}
+.descricaoInicial{
+    font-size: 1.5em;
+}
+.descricaoInicial2{
+    display: none;
+} 
+.watts{
+    top: 40vw;
+    left: 80vw;
+}  
+.imgwatts{
+width: 60px;
+height: 60px;
+opacity: 100%;
+}
+#reservar {
+    width: 17em;
+    height: 10em;
+    display: grid;
+    flex-direction: column;
+} 
+#reservar h3{
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 0.30em;
+}
+#reservar p{
+    font-size: 80%;
+    width: 100%;
+    text-align: center;
+}
+#reservar div{
+    width: 98%;
+}
+#reservar input[type="datetime-local"]{
+    font-size: 120%;
+}
+#reservar input[type="submit"]{
+    font-size: 100%;
+} 
+#reservar span{
+    font-size: 90%;
+    margin-bottom: 0.50em;
+}
+.textoDescricao{
+    padding: 0.5rem;
+}
+.imgchale2{
+    width: 390px;
+}    
+#chale1{
+    font-size: 1.5em;
+    color: #024D19;
+    align-items: center;
+}
+.texto4{
+    color: #024D19; 
+    font-size: 115%;
+    display: table-cell;
+ } 
+/*suites*/
+.textosuites h2{
+    font-size: 0.75em;
+}
+.imagemsuite{
+    width: 250px;
+    height: 250px;
+}
+.containertodoschales{
+    display: grid;
+    justify-content: center;
+}
+/*restaurante*/
+.containerfotorestaurante{
+    padding: 0.5rem;
+    margin-left: 3em;
+    margin-right: 0.5rem;
+}
+.descricaorestaurante h2{
+    font-size: 1.1em;
+}
+.descricaorestaurante p{
+    font-size: 0.85em;
+}
+.descricaorestaurante {
+    justify-content: center;
+    margin-left: 1.5em;
+    margin-right: 0.5rem;
+}
+.fotorestaurante{
+    width: 250px;
+    height: 220px;
+}
+/*contato*/
+#contato{
+    display: contents;
+    flex-direction: column;
+}
+.container2{
+    width: 65em;
+    height: 40em;
+    border-radius: 8px;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+.container2{
+    margin-left: 30px;
+}
+.containermapa{
+    width: 90%;
+    height: 90%;
+}
+.container4{
+    width: 90%;
+    height: 90%;
+}
+.endereco h3, h4{
+    font-size: 0.85em;
+}
+.endereco p{
+    font-size: 0.85em;
+}
+.container4 label{
+    font-size: 0.75em;
+}
+.mapa{
+    height: 130px;
+}
+.container4 h2{
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+.container4 input, textarea{
+    font-size: 8px;
+}
+.container4 button{
+    font-size: 10px;
+}
+.container4 form{
+    gap: 3px;
+}
+    /*rodape*/
+.rodape{
+    height: 250px;
+    width: 380px;
+    display: list-item;
+}
+.redessociais{
+    justify-items: center;
+}
+.contatos{
+    justify-items: center;
+}
+.redessociais span{
+    font-size: 0.8em;
+}
+.contatos span{
+    font-size: 1em;
+}
 }

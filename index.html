@@ -12,107 +12,110 @@
     <header>
         <nav>
         <!--menu navegação-->
-            <div>
-                <ul class="menuNavegacao">
-                    <img src="img/Xalés-logo-reduzida2.png" width="100px" height="40px" alt="logo xales da serra">
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Reservas</a></li>
-                     <li><a href="#">Serviços</a></li>
-                     <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <div id="imagemInicial"><img src="img/porDoSolEditada1349bachatada.jpg" alt="por do sol na montanha com um chale">
-                <div class="descricaofoto">
-                    <h2 class="descricaoInicial">Chalés perfeitos na <br>serra de Petrópolis</h2>
-                    <p class="descricaoInicial2">Venha desfrutar de paz e tranquilidade <br>com uma vista incrível.</p>
-                </di>
-            </div>
+            <section id="home">
+                <div>
+                    <ul class="menuNavegacao">
+                        <img src="img/Xalés-logo-reduzida2.png" width="100px" height="40px" class="imgnav" alt="logo xales da serra">
+                        <li class="nav1"><a href="#home">Home</a></li>
+                        <li class="nav1"><a href="#reservas">Reservas</a></li>
+                        <li class="nav1"><a href="#servicos">Serviços</a></li>
+                        <li class="nav1"><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div id="imagemInicial"><img src="img/porDoSolEditada1349bachatada.jpg" width="100%" class="img1" alt="por do sol na montanha com um chale">
+                    <div class="descricaofoto">
+                        <h2 class="descricaoInicial">Chalés perfeitos na <br>serra de Petrópolis</h2>
+                        <p class="descricaoInicial2">Venha desfrutar de paz e tranquilidade <br>com uma vista incrível.</p>
+                    </div>
+                </div>
+            </section>    
         </nav>
         <div class="watts">
-            <a href="#"><img src="img/watssapp.png" width="120px" height="120px"></a>
+            <a href="#"><img src="img/watssapp.png" width="120px" height="120px" class="imgwatts"></a>
         </div>
-        <div id="reservar">
+        <section id="reservar">
                 <div>
                     <h3>Reservar</h3>
                     <p>Selecione data e hora para check-in e check-out.</p>
                 </div>
                 <div>
-                    <form>
+                    <form class="reserva">
                         <span>Selecione a data e hora para check-in.</span>
                         <input type="datetime-local" value="selecione data"> <br>
                         <span>Selecione a data e hora para check-out</span>
                         <input type="datetime-local" value="selecione data"> <br>
                         <input type="submit" value="Reservar">
                     </form>
-                 </div>
-        </div>>        
-        <div class="textoDescricao">
-            <h2 id="chale1">Chalés exclusivos para você aproveitar com privacidade</h2>
-            <p class="texto4">Os chalés foram cuidadosamente posicionados em locais estratégicos, garantindo total privacidade e oferecendo vistas magníficas das montanhas, do lago e do riacho. Criamos um ambiente propício para que os hóspedes desfrutem de uma estadia inspiradora e revigorante.</p>
+                </div>
+        </section> 
+        <section id="servicos">     
+            <div class="textoDescricao">
+                <h2 id="chale1">Chalés exclusivos para você aproveitar com privacidade</h2>
+                <p class="texto4">Os chalés foram cuidadosamente posicionados em locais estratégicos, garantindo total privacidade e oferecendo vistas magníficas das montanhas, do lago e do riacho. Criamos um ambiente propício para que os hóspedes desfrutem de uma estadia inspiradora e revigorante.</p>
+            </div>
+            <!--fotos chales-->
+            <img src="img/De-onde-surgiram-os-chales-nas-montanhasredi.webp" width="100%" class="imgchale2" alt="xale em cim de uma montanha com vista de cima da montanha">
+
+            <div class="textosuites">
+                <h2>Conheça alguns dos nossos chalés</h2>
+            </div>
+            <div class="containertodoschales" >
+                <div id="containerfotoschales">
+                    <div class="containerfotos">
+                        <img class="imagemsuite"src="img/camaking.jpeg" alt="quarto com cama casal king">
+                        <p class="textosuite">Suite Sabia</p>
+                        <a href="#">Reservar</a>
+                    </div>
+                    
+                    <div class="containerfotos">
+                        <img class="imagemsuite" src="img/cama casal.jpeg"  alt="suite estilo chale com telhado em v">
+                        <p class="textosuite">Suite Beija-flor</p>
+                        <a href="#">Reservar</a>
+                    </div>
+
+                    <div class="containerfotos">
+                        <img class="imagemsuite" src="img/camacpaisagem.jpeg"  alt="quarto com cama de casal, janela de vidro com paisagem de montanhas">
+                        <p class="textosuite">Suite Colibri</p>
+                        <a href="#">Reservar</a>
+                    </div>
+                    <div class="containerfotos">
+                        <img class="imagemsuite"src="img/duascamas.jpeg" alt="suite com duas camas solteiro">
+                        <p class="textosuite">Suite Azulão</p>
+                        <a href="#">Reservar</a>
+                    </div>
+                    
+                    <div class="containerfotos">
+                        <img class="imagemsuite" src="img/duascamascpaisagem.jpeg"  alt="suite com duas camas e janela grande com paisagem">
+                        <p class="textosuite">Suite Garça</p>
+                        <a href="#">Reservar</a>
+                    </div>
+
+                    <div class="containerfotos">
+                        <img class="imagemsuite" src="img/suitehidromassagem.jpeg"  alt="suite com hidromassagem">
+                        <p class="textosuite">Suite Arara Azul</p>
+                        <a href="#">Reservar</a>
+                    </div>
+                </div>
+            </section>    
+            <!--fim das fotos chales-->
         </div>
-        <!--fotos chales-->
-        <img src="img/De-onde-surgiram-os-chales-nas-montanhasredi.webp">
-
-        <div class="textosuites">
-            <h2>Conheça alguns dos nossos chalés</h2>
-        </div>
-        <div id="containerfotoschales">
-            <div class="containerfotos">
-                <img class="imagemsuite"src="img/camaking.jpeg" alt="quarto com cama casal king">
-                <p class="textosuite">Suite Sabia</p>
-                <a href="#">Reservar</a>
-            </div>
-            
-            <div class="containerfotos">
-                <img class="imagemsuite" src="img/cama casal.jpeg"  alt="suite estilo chale com telhado em v">
-                <p class="textosuite">Suite Beija-flor</p>
-                <a href="#">Reservar</a>
-            </div>
-
-            <div class="containerfotos">
-                <img class="imagemsuite" src="img/camacpaisagem.jpeg"  alt="quarto com cama de casal, janela de vidro com paisagem de montanhas">
-                <p class="textosuite">Suite Colibri</p>
-                <a href="#">Reservar</a>
-            </div>
-            <div class="containerfotos">
-                <img class="imagemsuite"src="img/duascamas.jpeg" alt="suite com duas camas solteiro">
-                <p class="textosuite">Suite Azulão</p>
-                <a href="#">Reservar</a>
-            </div>
-            
-            <div class="containerfotos">
-                <img class="imagemsuite" src="img/duascamascpaisagem.jpeg"  alt="suite com duas camas e janela grande com paisagem">
-                <p class="textosuite">Suite Garça</p>
-                <a href="#">Reservar</a>
-            </div>
-
-            <div class="containerfotos">
-                <img class="imagemsuite" src="img/suitehidromassagem.jpeg"  alt="suite com hidromassagem">
-                <p class="textosuite">Suite Arara Azul</p>
-                <a href="#">Reservar</a>
-            </div>
-        </div>
-        <!--fim das fotos chales-->
-
-        <!--restaurante-->
-        <div>
-            <div class="descricaorestaurante">
-                <h2>Restaurante</h2>
-                <p>Desfrute de sabores caseiros e ingredientes frescos em nosso restaurante, onde a culinária regional e o ambiente acolhedor garantem refeições inesquecíveis.</p>
-            </div>
-            <div class="containerfotorestaurante">
-                <img class="fotorestaurante"src="img/restaurante3.jpg" alt="">
-                <img class="fotorestaurante"src="img/almoco2fotos1.jpg" alt="">
-                <img class="fotorestaurante"src="img/almoco2fotos2.jpg" alt="">
-            </div>
-        </div>   
+            <!--restaurante-->
+            <div>
+                <div class="descricaorestaurante">
+                    <h2>Restaurante</h2>
+                    <p>Desfrute de sabores caseiros e ingredientes frescos em nosso restaurante, onde a culinária regional e o ambiente acolhedor garantem refeições inesquecíveis.</p>
+                </div>
+                <div class="containerfotorestaurante">
+                    <img class="fotorestaurante"src="img/restaurante3.jpg" alt="foto de um restaurante com piso e cadeiras de madeiras em um deck">
+                    <img class="fotorestaurante"src="img/almoco2fotos1.jpg" alt="foto de 3 refeiçoes diferentes em cima de uma mesa com bebidas">
+                    <img class="fotorestaurante fotoculta" src="img/almoco2fotos2.jpg" alt="foto de uma lasanha com muito queijo sendo servida">
+                </div>
+            </div>   
          <!--contato-->
-         <br>
-         <br>
-         <br>
+        <section id="contato">
             <div class="container2">
                 <div class="containermapa">
-                    <iframe class="mapa"  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12310.876504946043!2d-43.135363059638635!3d-22.447791241362317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBonfim%20-%20Petr%C3%B3polis%20-%20R.%20Folha%20e%20Fl%C3%B4r%20-%20Corr%C3%AAas%2C%20Petr%C3%B3polis%20-%20RJ%2C%2025730-071!5e1!3m2!1spt-BR!2sbr!4v1733760368125!5m2!1spt-BR!2sbr" width="427px" height="250px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="mapa"  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12310.876504946043!2d-43.135363059638635!3d-22.447791241362317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBonfim%20-%20Petr%C3%B3polis%20-%20R.%20Folha%20e%20Fl%C3%B4r%20-%20Corr%C3%AAas%2C%20Petr%C3%B3polis%20-%20RJ%2C%2025730-071!5e1!3m2!1spt-BR!2sbr!4v1733760368125!5m2!1spt-BR!2sbr" width="100%" height="250px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="endereco">
                         <h3>Nosso endereço:</h3>
                         <p>Rua Folha e Flôr </p>
@@ -143,25 +146,26 @@
                         <button type="submit">Enviar</button> 
                     </form> 
                 </div>
-            </div>    
+            </div>
+        </section>        
     </main>
     <footer class="rodape">
         <div class="imgrodape">
-        <img src="img/Xalés-logo-reduzida2.png" width="120px" height="60px" alt="logo xales da serra">
+        <img src="img/Xalés-logo-reduzida2.png" width="120px" height="60px" alt="logo xales da serra" class="xalerodape">
         </div>
         <div class="redessociais">
             <span>Visite nossas redes socias</span>
             <div>
-                <a href="#"><img src="img/facebookredi.png" width="30px" height="30px" alt="logo facebook"></a>
-                <a href="#"><img src="img/instagramredi.png" width="30px" height="30px" alt="instagram"></a>
-                <a href="#"><img src="img/watssapquadredi.png" width="30px" height="30px" alt="logo wattsapp"></a>
+                <a href="#"><img src="img/facebookredi.png" width="30px" height="30px" alt="logo facebook" class="facebook"></a>
+                <a href="#"><img src="img/instagramredi.png" width="30px" height="30px" alt="instagram" class="instagram"></a>
+                <a href="#"><img src="img/watssapquadredi.png" width="30px" height="30px" alt="logo wattsapp" class="wattsapp"></a>
             </div>
         </div>
         <div class="contatos">
             <span>Contato</span>
             <span>Telefone: (24)5421-2154</span>
-            <a href="#"><span>Wattsapp:(24)99125-24546</span></a>
-            <a href="#"><span>E-mail:pousadaserradoaconchego@hotmail.com</span></a>
+            <a href=""https://wa.me/55249912524546?text=Olá,%20gostaria%20de%20saber%20mais%20informações." target="_blank"><span>Wattsapp:(24)99125-24546</span></a
+            <a href="mailto:pousadaserradoaconchego@hotmail.com"><span>E-mail:pousadaserradoaconchego@hotmail.com</span></a>
         </div>
     </footer>
 </body>
